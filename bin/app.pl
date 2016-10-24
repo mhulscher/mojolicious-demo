@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 
+use Sys::Hostname;
 use Mojolicious::Lite;
 
 get '/healthz' => sub {
@@ -12,7 +13,8 @@ get '/' => sub {
   $c->render(
     status => 200,
     json => {
-      "Powered-By" => $ENV{'POWERED_BY'} || "Perl"
+      "Powered-By" => $ENV{'POWERED_BY'} || "Perl",
+      "Hostname"   => hostname(), 
     }
   );
 };
