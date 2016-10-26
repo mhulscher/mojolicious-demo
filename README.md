@@ -13,7 +13,7 @@ Small application used to demonstrate Docker fundamentals.
 
 ## Use
 ```
-curl -s http://127.0.0.1:8080 | jq -Mc .
+curl -s http://127.0.0.1:8080 | jq .
 {
   "Hostname": "2e84f7c832d5",
   "Powered-By": "Perl"
