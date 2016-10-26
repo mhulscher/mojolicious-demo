@@ -1,4 +1,4 @@
-FROM mhulscher/perl-carton-base:latest
+FROM quay.io/mhulscher/perl-carton-base:latest
 
 ## Expose the webserver
 EXPOSE 8080
